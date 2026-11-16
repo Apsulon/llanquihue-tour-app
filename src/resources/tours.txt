@@ -1,0 +1,6 @@
+Paseo Lago Llanquihue;Lacustre;25000;3;15
+Ruta Gastronomica Puerto Varas;Gastronomico;32000;4;12
+Tour Cultural Frutillar;Cultural;18000;2;20
+Excursion Volcan Osorno;Aventura;45000;6;8
+Paseo en Kayak Rio Maullin;Aventura;28000;3;10
+Tour Cervezas Artesanales;Gastronomico;22000;3;14
