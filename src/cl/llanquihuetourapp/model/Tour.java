@@ -7,6 +7,7 @@ public class Tour {
     private double precio;
     private int horas;
     private int cupos;
+    private Guia guia;
 
     public Tour (){
         this.nombre = "Sin Nombre";
@@ -14,14 +15,16 @@ public class Tour {
         this.precio = 0;
         this.horas = 0;
         this.cupos = 0;
+        this.guia = new Guia("Sin Nombre", 0, "Sin especialidad");
     }
 
-    public Tour(String nombre, String tipo, double precio, int horas, int cupos) {
+    public Tour(String nombre, String tipo, double precio, int horas, int cupos, Guia guia) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
         this.horas = horas;
         this.cupos = cupos;
+        this.guia = guia;
     }
 
     public String getNombre() {
@@ -87,6 +90,7 @@ public class Tour {
                 ", precio=" + precio +
                 ", horas=" + horas +
                 ", cupos=" + cupos +
+                ", guia= " + guia +
                 '}';
     }
 }

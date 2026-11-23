@@ -1,5 +1,6 @@
 package cl.llanquihuetourapp.data;
 
+import cl.llanquihuetourapp.model.Guia;
 import cl.llanquihuetourapp.model.Tour;
 
 import java.io.BufferedReader;
@@ -41,7 +42,7 @@ public class GestorDatos {
                     int horas = Integer.parseInt(campos[3].trim());
                     int cupos = Integer.parseInt(campos[4].trim());
 
-                    Tour tour = new Tour(nombre, tipo, precio, horas, cupos);
+                    Tour tour = new Tour(nombre, tipo, precio, horas, cupos, new Guia("Guia local",1,"Turismo general"));
 
                     listaTours.add(tour);
 

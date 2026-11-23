@@ -1,7 +1,8 @@
-package cl.llanquihuetourapp.ui;
+package cl.llanquihuetourapp.app;
 
 import cl.llanquihuetourapp.data.GestorDatos;
 import cl.llanquihuetourapp.model.Tour;
+import cl.llanquihuetourapp.service.GestorColecciones;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -14,14 +15,25 @@ public class Main {
         GestorDatos gestor = new GestorDatos();
 
         try {
-            ArrayList <Tour> listaDeTours = gestor.cargarTours(ruta);
+            ArrayList<Tour> listaDeTours = gestor.cargarTours(ruta);
             System.out.println("----- CATALOGO DE TOURS -----");
             System.out.println("TOURS CARGADOS: " + listaDeTours.size());
 
             System.out.println("\n---Todos los Tours---");
-            for (Tour tour : listaDeTours){
+            for (Tour tour : listaDeTours) {
                 System.out.println(tour);
             }
+
+            //Colecciones
+            GestorColecciones gestorColecciones = new GestorColecciones();
+
+            //Stack
+            System.out.println("\n ===== HISTORIAL (STACK) =====");
+            gestorColecciones.historialTours(listaDeTours);
+
+            //HashMap
+            System.out.println("\n ===== BUSCAR POR NOMBRE (HASHMAP) =====");
+            gestorColecciones.buscarTour(listaDeTours);
 
             System.out.println("\n--- TOURS CON PRECIO MAYOR A 25000 ---");
 
