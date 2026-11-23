@@ -6,6 +6,12 @@ public class Guia {
     private int añosExperiencia;
     private String especialidad;
 
+    public Guia() {
+        this.nombre = "Sin nombre";
+        this.añosExperiencia = 0;
+        this.especialidad = "Sin especialidad";
+    }
+
     public Guia(String nombre, int añosExperiencia, String especialidad) {
         this.nombre = nombre;
         this.añosExperiencia = añosExperiencia;
@@ -29,7 +35,7 @@ public class Guia {
 
     public void setAñosExperiencia (int añosExperiencia){
         if (añosExperiencia < 0) {
-            throw new IllegalArgumentException("Los años de experiencia deben ser igual o mayot a 0");
+            throw new IllegalArgumentException("Los años de experiencia deben ser igual o mayor a 0");
         }
         this.añosExperiencia = añosExperiencia;
     }

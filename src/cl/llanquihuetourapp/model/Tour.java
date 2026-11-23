@@ -8,6 +8,7 @@ public class Tour {
     private int horas;
     private int cupos;
     private Guia guia;
+    private Transporte transporte;
 
     public Tour (){
         this.nombre = "Sin Nombre";
@@ -15,16 +16,18 @@ public class Tour {
         this.precio = 0;
         this.horas = 0;
         this.cupos = 0;
-        this.guia = new Guia("Sin Nombre", 0, "Sin especialidad");
+        this.guia = new Guia();
+        this.transporte = new Transporte();
     }
 
-    public Tour(String nombre, String tipo, double precio, int horas, int cupos, Guia guia) {
+    public Tour(String nombre, String tipo, double precio, int horas, int cupos, Guia guia, Transporte transporte) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
         this.horas = horas;
         this.cupos = cupos;
         this.guia = guia;
+        this.transporte = transporte;
     }
 
     public String getNombre() {
@@ -82,6 +85,28 @@ public class Tour {
         this.cupos = cupos;
     }
 
+    public Guia getGuia() {
+        return guia;
+    }
+
+    public void setGuia(Guia guia) {
+        if (guia == null) {
+            throw new IllegalArgumentException("El tour debe tener un guia");
+        }
+        this.guia = guia;
+    }
+
+    public Transporte getTransporte() {
+        return transporte;
+    }
+
+    public void setTransporte(Transporte transporte) {
+        if (transporte == null) {
+            throw new IllegalArgumentException("El tour debe tener un transporte");
+        }
+        this.transporte = transporte;
+    }
+
     @Override
     public String toString() {
         return "Tour{" +
@@ -91,6 +116,7 @@ public class Tour {
                 ", horas=" + horas +
                 ", cupos=" + cupos +
                 ", guia= " + guia +
+                ", transporte= " + transporte +
                 '}';
     }
 }

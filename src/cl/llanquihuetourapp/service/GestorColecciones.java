@@ -10,6 +10,11 @@ public class GestorColecciones {
 
     public void historialTours(ArrayList<Tour> listaTours) {
 
+        if (listaTours.isEmpty()) {
+            System.out.println("\n No hay tour para mostrar en el historial");
+            return;
+        }
+
         Stack <String> historial = new Stack<>();
 
        for (Tour tour : listaTours){
@@ -51,7 +56,7 @@ public class GestorColecciones {
         //Recorrer mapa
         System.out.println("\n - - - TOURS EN EL MAPA - - -");
         for (String nombre : buscar.keySet()) {
-            System.out.println(nombre + " -> " + buscar.get(nombre));
+            System.out.println(nombre + " -> " + buscar.get(nombre).getPrecio());
         }
 
     }

@@ -1,6 +1,6 @@
-Paseo Lago Llanquihue;Lacustre;25000;3;15
-Ruta Gastronomica Puerto Varas;Gastronomico;32000;4;12
-Tour Cultural Frutillar;Cultural;18000;2;20
-Excursion Volcan Osorno;Aventura;45000;6;8
-Paseo en Kayak Rio Maullin;Aventura;28000;3;10
-Tour Cervezas Artesanales;Gastronomico;22000;3;14
+Paseo Lago Llanquihue;Lacustre;25000;3;15;Carlos Soto;8;Navegacion lacustre;Bote;Lagos del Sur;20
+Ruta Gastronomica Puerto Varas;Gastronomico;32000;4;12;Marta Rios;5;Gastronomia local;Minibus;Transportes Sur;15
+Tour Cultural Frutillar;Cultural;18000;2;20;Ana Vargas;10;Historia y cultura;Bus;Buses Lago;40
+Excursion Volcan Osorno;Aventura;45000;6;8;Pedro Mella;12;Montana y trekking;Camioneta;Andes Sur;8
+Paseo en Kayak Rio Maullin;Aventura;28000;3;10;Luis Aguilar;6;Kayak y deportes acuaticos;Furgon;Rio Maullin Tour;10
+Tour Cervezas Artesanales;Gastronomico;22000;3;14;Sofia Pino;4;Cervezas artesanales;Minibus;Transportes Sur;14
